@@ -1,0 +1,52 @@
+[
+    {
+        "model": "books.member",
+        "pk": 1,
+        "fields": {
+            "name": "Alice Johnson",
+            "email": "alice@example.com",
+            "membership_date": "2023-05-10"
+        }
+
+    },
+    {
+        "model": "books.member",
+        "pk": 2,
+        "fields": {
+            "name": "Bob Smith",
+            "email": "bob@example.com",
+            "membership_date": "2022-11-20"
+        }
+
+    },
+    {
+        "model": "books.member",
+        "pk": 3,
+        "fields": {
+           "name": "Charlie Brown",
+            "email": "charlie@example.com",
+            "membership_date": "2024-01-15"
+        }
+
+    },
+    {
+        "model": "books.member",
+        "pk": 4,
+        "fields": {
+            "name": "Johnson",
+            "email": "john@example.com",
+            "membership_date": "2023-05-10"
+        }
+
+    },
+    {
+        "model": "books.borrowrecord",
+        "pk": 1,
+        "fields":{
+            "book": 1,
+            "member": 1,
+            "borrow_date": "2024-03-01",
+            "return_date": "2024-03-15"
+        }
+    }
+]

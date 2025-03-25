@@ -1,0 +1,113 @@
+[
+    {
+        "model": "books.category",
+        "pk": 1,
+        "fields": {
+            "name": "Fiction",
+            "description": "This is Fiction book"
+        }
+    },
+    {
+        "model": "books.category",
+        "pk": 2,
+        "fields": {
+           "name": "Science Fiction",
+            "description": "Books that explore futuristic concepts, advanced technology, and space exploration."
+    
+        }
+    },
+    {
+        "model": "books.category",
+        "pk": 3,
+        "fields": {
+            "name": "Mystery",
+            "description": "Books that involve solving crimes, uncovering secrets, and thrilling narratives."
+    
+        }
+    },
+    {
+        "model": "books.category",
+        "pk": 4,
+        "fields": {
+            "name": "Non-Fiction",
+            "description": "Informative books based on real events, facts, and knowledge."
+        }
+    },
+    {
+        "model": "books.author",
+        "pk": 1,
+        "fields": {
+            "name": "John Miquel",
+            "biography": "John miquel is a fictioner"
+        }
+    },
+    {
+        "model": "books.author",
+        "pk": 2,
+        "fields": {
+            "name": "Isaac Asimov",
+            "biography": "Isaac Asimov was a prolific writer known for his works in science fiction and popular science."
+        }
+    },
+    {
+        "model": "books.author",
+        "pk": 3,
+        "fields": {
+            "name": "Agatha Christie",
+            "biography": "Agatha Christie was a famous British writer known for her detective novels and mystery stories."
+        }
+    },
+    {
+        "model": "books.author",
+        "pk": 4,
+        "fields": {
+            "name": "Malcolm Gladwell",
+            "biography": "Malcolm Gladwell is a Canadian journalist and author known for his books on psychology and social sciences."
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 1,
+        "fields": {
+            "title": "New book",
+            "author": 1,
+            "isbn": "123-456-HH",
+            "category": 1,
+            "availability": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 2,
+        "fields": {
+            "title": "Foundation",
+            "author": 2,
+            "isbn": "978-0-553-80371-0",
+            "category": 2,
+            "availability": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 3,
+        "fields": {
+            "title": "Murder on the Orient Express",
+            "author": 3,
+            "isbn": "978-0-06-269366-2",
+            "category": 3,
+            "availability": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 4,
+        "fields": {
+            "title": "Outliers",
+            "author": 4,
+            "isbn": "978-0-316-01792-3",
+            "category": 4,
+            "availability": true
+    
+        }
+    }
+]
