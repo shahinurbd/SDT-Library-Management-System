@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 
 # Create your models here.
 class Category(models.Model):
@@ -30,20 +31,12 @@ class Book(models.Model):
     def __str__(self):
         return self.title
     
-class Member(models.Model):
-    name = models.CharField(max_length=250)
-    email = models.EmailField(unique=True)
-    membership_date = models.DateField(auto_now_add=True)
-
-    def __str__(self):
-        return self.name
-    
 
 class BorrowRecord(models.Model):
     book = models.ForeignKey(
         Book, related_name='book',on_delete=models.CASCADE)
     member = models.ForeignKey(
-        Member,on_delete=models.CASCADE,default=1, related_name='member'
+        settings.AUTH_USER_MODEL,on_delete=models.CASCADE,default=1, related_name='member'
     )
     borrow_date = models.DateField()
     return_date = models.DateField()
