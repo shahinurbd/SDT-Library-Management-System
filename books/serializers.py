@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from books.models import Book,Category,Member,Author,BorrowRecord,ReturnBook
+from books.models import Book,Category,Author,BorrowRecord,ReturnBook
+from users.models import User
 
 class BookSerializer(serializers.ModelSerializer):
     class Meta:
@@ -18,7 +19,7 @@ class AuthorSerializer(serializers.ModelSerializer):
 
 class MemberSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Member
+        model = User
         fields = ['id', 'name', 'email', 'membership_date']
 
 class BorrowRecordSerializer(serializers.ModelSerializer):
