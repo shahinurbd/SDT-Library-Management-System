@@ -20,7 +20,8 @@ class AuthorSerializer(serializers.ModelSerializer):
 class MemberSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'name', 'email', 'membership_date']
+        fields = ['id', 'first_name', 'last_name', 'email', 'membership_date']
+
 
 class BorrowRecordSerializer(serializers.ModelSerializer):
     class Meta:
